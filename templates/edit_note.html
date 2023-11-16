@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <title>Edit note</title>
+  </head>
+  <body>
+    <section class="vh-100" style="background-color: #eee">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-lg-9 col-xl-7">
+            <div class="card rounded-3">
+              <div class="card-body p-4">
+                <h4 class="text-center my-3 pb-3">Edit</h4>
+                <tbody>
+                  <tr class="content__form">
+                    <p class="note__content"></p>
+                    <form method="POST">
+                      <textarea
+                        type="text"
+                        name="content"
+                        class="form-control edit_note_form"
+                        required
+                      >
+{{ note.content }}</textarea
+                      >
+                      <br />
+                      <button type="submit" class="btn btn-success ms-2">
+                        Save
+                      </button>
+                    </form>
+                    <br />
+                  </tr>
+                </tbody>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

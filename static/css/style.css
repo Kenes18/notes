@@ -1,0 +1,51 @@
+body {
+  background-color: #eee;
+  font-family: sans-serif;
+}
+
+.button__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button__link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.notes {
+  color: black;
+}
+
+.note__content {
+  text-align: center;
+  align-items: center;
+}
+
+.edit_note_form {
+  width: 100%;
+  height: 500px;
+}
+
+.welcome__dashboard {
+  text-align: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.welcome__dashboard a {
+  text-decoration: none;
+  color: gray;
+  text-decoration: none;
+}
+
+.welcome__dashboard p {
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.username {
+  color: pink;
+  font-weight: bold;
+}
